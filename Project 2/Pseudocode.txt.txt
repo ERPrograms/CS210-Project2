@@ -1,0 +1,52 @@
+Display a welcome message to the user
+
+Prompt user to enter initial investment amount
+Store value in variable: initialInvestment
+
+Prompt user to enter monthly deposit amount
+Store value in variable: monthlyDeposit
+
+Prompt user to enter annual interest rate (as a percentage)
+Store value in variable: annualInterestRate
+
+Prompt user to enter number of years for investment
+Store value in variable: numYears
+
+Define a class named Investment
+  - Private member variables:
+      initialInvestment
+      monthlyDeposit
+      annualInterestRate
+      numYears
+
+  - Public methods:
+      Constructor to initialize investment values
+      setValues() method to update values
+      calculateWithoutMonthlyDeposit() method
+      calculateWithMonthlyDeposit() method
+      displayReports() method
+
+Create an object of Investment class
+Pass user inputs to the constructor
+
+Call calculateWithoutMonthlyDeposit() method
+  For each year from 1 to numYears:
+      Use compound interest formula to calculate total amount at end of year
+      Display year number, year-end balance, interest earned
+
+Call calculateWithMonthlyDeposit() method
+  For each year from 1 to numYears:
+      For each month (1 to 12):
+          Add monthly deposit to current total
+          Apply monthly interest (annualInterestRate / 12)
+      At end of each year:
+          Display year number, year-end balance, interest earned
+
+Ask the user if they want to enter new data and see the results again
+If yes:
+    Repeat the input and calculation steps
+If no:
+    Proceed to end program
+
+Display exit message
+Close the program
